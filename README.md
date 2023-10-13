@@ -3,6 +3,7 @@
 In case you know the SHAPER Origin you know what this generator does and how to use the generated files.
 It generates SVG files like that:
 
+![Generated corner SVG](https://raw.githubusercontent.com/tseiman/ShaperCorner/main/ShaperCorner_R20mm.svg?raw=true)
 
 
 ## usage
