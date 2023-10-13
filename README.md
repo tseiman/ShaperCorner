@@ -1,10 +1,11 @@
 # A SVG generator, generating corner shapes for the SHAPER Origin 
 
 In case you know the SHAPER Origin you know what this generator does and how to use the generated files.
-It generates SVG files like that:
+It generates SVG files like that with the selected Radius:
 
 ![Generated corner SVG](https://raw.githubusercontent.com/tseiman/ShaperCorner/main/ShaperCorner_R20mm.svg?raw=true)
 
+This project is inspired by "Sam's" corner rounding from ShaperHub: https://hub.shapertools.com/creators/59b9b947291ebbfa71254b56/shares/6351788e91733509027f62ba
 
 ## usage
 
