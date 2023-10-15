@@ -17,4 +17,4 @@ This project is inspired by "Sam's" corner rounding from ShaperHub: https://hub.
 
 
 ## install
-Right click on [ShaperCorner.html](https://raw.githubusercontent.com/tseiman/ShaperCorner/main/ShaperCorner.html) and download or safe the linked file to your computer. __Safe the file as HTML (not as text !)__. If the file is saved automatically you need eventuall to change the extension from TXT to HTML. Nothing else is needed, just open the file ine e.g. Chrome or Safari (both tested) and run the web application locally.
+Right click on [ShaperCorner.html](https://raw.githubusercontent.com/tseiman/ShaperCorner/main/ShaperCorner.html) and download or safe the linked file to your computer. __Safe the file as HTML (not as text !)__. If the file is saved automatically you need eventuall to change the extension from TXT to HTML on you computer. Nothing else is needed, just open the file ine e.g. Chrome or Safari (both tested) and run the web application locally.
