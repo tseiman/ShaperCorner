@@ -15,7 +15,7 @@ jobs:
         cd release
         ls -la
     - name: Bump version and push tag
-      uses: tseiman/github-tag-action@main
+      uses: tseiman/ShaperCorner@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO_OWNER: tseiman
