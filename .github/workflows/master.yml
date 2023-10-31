@@ -12,3 +12,4 @@ jobs:
         run: zip -r release.zip .
       - name: Release to Github
         run: echo "Release"
+
