@@ -11,12 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set env
-      run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-    - name: Get Composer Cache Directory
-      id: composer-cache
-      run: |
-        echo "::set-output name=dir::$(composer config cache-files-dir)"
+
     - uses: actions/cache@v3
       with:
         path: ${{ steps.composer-cache.outputs.dir }}
@@ -28,6 +23,13 @@ jobs:
         composer install -o -q
     - name: Zip Folder
       run: zip -r ${{ github.event.repository.name }}.zip . -x ".git/*" ".github/*" "Glyphs.svg" "ShaperCorner_R20mm.svg" ".gitignore"
+
+    - name: Set env
+      run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+    - name: Get Composer Cache Directory
+      id: composer-cache
+      run: |
+        echo "::set-output name=dir::$(composer config cache-files-dir)"
 
     - name: Release
       uses: softprops/action-gh-release@v1
