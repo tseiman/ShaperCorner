@@ -20,5 +20,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO_OWNER: tseiman
         WITH_V: true
-        DEFAULT_BRANCH: main
         VERBOSE: true
