@@ -23,9 +23,9 @@ jobs:
         key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-composer-
-    - name: Install dependencies
-      run: |
-        composer install -o -q
+ #   - name: Install dependencies
+  #    run: |
+   #     composer install -o -q
 
     - name: Set env
       run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
