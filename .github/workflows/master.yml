@@ -15,7 +15,6 @@ jobs:
     - name: Get Composer Cache Directory
       id: composer-cache
       run: |
-  #      echo "::set-output name=dir::$(composer config cache-files-dir)"
         run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
     - uses: actions/cache@v3
       with:
@@ -23,18 +22,12 @@ jobs:
         key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-composer-
- #   - name: Install dependencies
-  #    run: |
-   #     composer install -o -q
 
     - name: Set env
       run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
         
     - name: Zip Folder
       run: zip -r ${{ github.event.repository.name }}_v${{ env.RELEASE_VERSION }}.zip . -x ".git/*" ".github/*" "Glyphs.svg" "ShaperCorner_R20mm.svg" ".gitignore"
-
-
-
 
     - name: Release
       uses: softprops/action-gh-release@v1
