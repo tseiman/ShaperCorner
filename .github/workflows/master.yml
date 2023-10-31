@@ -21,4 +21,4 @@ jobs:
         REPO_OWNER: tseiman
         WITH_V: true
         DEFAULT_BRANCH: main
-        VERBOSE: true
+        VERBOSE: false
